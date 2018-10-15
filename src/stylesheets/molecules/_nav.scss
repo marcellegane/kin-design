@@ -1,0 +1,13 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__divider {
+  width: rem(1);
+  height: rem(30);
+  margin-left: $gtr;
+  margin-right: $gtr;
+  background-color: $grey;
+}
