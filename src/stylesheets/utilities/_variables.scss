@@ -1,0 +1,21 @@
+// Typography
+$ff-primary: sofia-pro, sans-serif;
+
+$fw-bold: 700;
+
+// Colors
+$black: #121212;
+$off-black: #222222;
+$white: #FFF;
+$body-text: $white;
+
+// Layout
+$sp-l: rem(60);
+$sp-s: rem(30);
+
+// Grid
+$gtr       : rem(30);
+$gtr-half  : $gtr / 2;
+$gtr-dbl   : $gtr * 2;
+$cols      : 12;
+$max-width : rem(1440);
