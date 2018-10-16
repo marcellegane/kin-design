@@ -6,15 +6,15 @@
   align-items: $align;
 
   @if $gutters == true {
-    margin-left: -$gtr-half;
-    margin-right: -$gtr-half;
+    margin-left: -$gtr;
+    margin-right: -$gtr;
   }
 }
 
 @mixin flex-span($columns-span, $gutters: true) {
   @if $gutters {
-    width: calc(#{percentage($columns-span / $cols)} - #{$gtr});
-    margin: $gtr-half;
+    width: calc(#{percentage($columns-span / $cols)} - #{$gtr-dbl});
+    margin: $gtr;
   } @else {
     width: #{percentage($columns-span / $cols)};
   }
@@ -22,9 +22,9 @@
 
 @mixin flex-offset($columns, $right: false) {
   @if $right {
-    margin-right: calc(#{percentage($columns / $cols)} + #{$gtr-half});
+    margin-right: calc(#{percentage($columns / $cols)} + #{$gtr});
   } @else {
-    margin-left: calc(#{percentage($columns / $cols)} + #{$gtr-half});
+    margin-left: calc(#{percentage($columns / $cols)} + #{$gtr});
   }
 }
 
