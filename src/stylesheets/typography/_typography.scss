@@ -8,3 +8,12 @@ body {
   font-family: $ff-primary;
   color: $body-text;
 }
+
+@mixin t-m {
+  font-size: rem(18);
+  line-height: (27/18);
+}
+
+.t-m {
+  @include t-m;
+}

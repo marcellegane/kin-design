@@ -1,3 +1,14 @@
 .btn {
   display: inline-block;
+  padding: em(9) em(20) em(10);
+
+  font-family: $ff-primary;
+  font-size: rem(16);
+  font-weight: $fw-bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: rem(1);
+  color: $white;
+
+  background-color: $red;
 }

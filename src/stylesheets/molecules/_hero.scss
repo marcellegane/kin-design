@@ -1,0 +1,31 @@
+.hero {
+  padding-top: $header-height + $gtr;
+}
+
+.hero__body {
+  position: relative;
+  padding-top: $header-height;
+}
+
+.hero__particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: $gtr * 3;
+  width: 70%;
+  border: rem(2) solid rgba($white, 0.4);
+}
+
+.hero__main {
+  @include flow;
+  position: relative;
+  max-width: 41em;
+  margin-left: auto;
+  padding: $gtr-dbl;
+  background-color: $black;
+}
+
+.hero__text {
+  @include flow;
+  @include t-m;
+}

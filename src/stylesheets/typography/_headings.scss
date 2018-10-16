@@ -2,3 +2,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $fw-bold;
   margin: 0;
 }
+
+@mixin h-l {
+  font-size: rem(48);
+  line-height: (58/48);
+}
+
+.h-l {
+  @include h-l;
+}

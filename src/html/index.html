@@ -1,5 +1,23 @@
 {% extends 'layouts/application.html' %}
 
 {% block content %}
+  <div class="hero">
+    <div class="container">
+      <div class="grid">
+        <div class="col col-m-10 offset-m-1">
 
+          <div class="hero__body">
+            <div id="particles" class="hero__particles"></div>
+
+            <div class="hero__main">
+              <h2 class="h-l">{{ hero.title }}</h2>
+              <div class="hero__text">{{ hero.text | safe }}</div>
+              <a href="#" class="btn">Apply</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}
