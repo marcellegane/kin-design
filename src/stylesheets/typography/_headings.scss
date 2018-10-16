@@ -5,9 +5,37 @@ h1, h2, h3, h4, h5, h6 {
 
 @mixin h-l {
   font-size: rem(48);
+  font-weight: $fw-bold;
   line-height: (58/48);
 }
 
 .h-l {
   @include h-l;
+}
+
+@mixin h-m {
+  font-size: rem(36);
+  font-weight: $fw-bold;
+  line-height: 1;
+}
+
+.h-m {
+  @include h-m;
+
+  &--box {
+    position: relative;
+    display: inline-block;
+    padding: rem(15) rem(30) rem(20);
+    background-color: $black;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 70%;
+      height: rem(6);
+      background-color: $red;
+    }
+  }
 }

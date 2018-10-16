@@ -15,13 +15,10 @@ $red: #F0474D;
 $body-text: $white;
 
 // Layout
-$sp-l: rem(60);
-$sp-s: rem(30);
-
 $header-height: rem(108);
 
 // Grid
-$gtr       : rem(30);
+$gtr       : 2vw;
 $gtr-half  : $gtr / 2;
 $gtr-dbl   : $gtr * 2;
 $cols      : 12;

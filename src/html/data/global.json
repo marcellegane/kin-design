@@ -4,5 +4,18 @@
   "hero": {
     "title": "Our History | Our Future",
     "text": "<p>KIN is a new initiative aiming to bring black activists and organisers together from across the UK to collaborate, strategise and support each other.</p><p>The first  convening will take place from Friday 17th to Sunday 19th August 2018 where around thirty activists and organisers will come together to explore the history of national and international social movements, to share organising practice and to contextualise what achieving collective liberation looks like within the UK. Click here to apply.</p>"
-  }
+  },
+
+  "latest": [
+    {
+      "thumb": "images/latest-thumb-1.jpg",
+      "date": "27th July 2018",
+      "title": "Thanks for attending our official launch"
+    },
+    {
+      "thumb": "images/latest-thumb-2.jpg",
+      "date": "24th July 2018",
+      "title": "Apply before tomorrow night"
+    }
+  ]
 }
