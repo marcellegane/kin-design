@@ -3,19 +3,21 @@
 {% block content %}
   <div class="hero">
     <div class="container">
-      <div class="grid grid--j-c">
 
+      <div class="grid">
         <div class="col col-m-9">
           <div class="hero__title">
             <h2 class="h-l">Meet the team</h2>
           </div>
         </div>
+      </div>
 
+      <div class="grid grid--j-c">
         {% for member in team %}
-          <div class="col col-m-4">
+          <div class="col col-m-3">
             <div class="person">
               <div class="person__thumb" style="background-image: url({{ member.thumb }})"></div>
-              <h3 class="person__title h-m">{{ member.name }}</h3>
+              <h3 class="person__title h-s">{{ member.name }}</h3>
               <p class="person__role">{{ member.role }}</p>
               <p class="person__text">{{ member.about }}</p>
             </div>
