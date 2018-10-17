@@ -1,1 +1,16 @@
-.footer {}
+.footer {
+  color: $black;
+}
+
+.footer__grid {
+  @include media($medium-screen-up) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.footer__copy {
+  margin-top: 1em;
+  text-align: right;
+}

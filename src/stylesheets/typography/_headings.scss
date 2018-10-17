@@ -39,3 +39,13 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 }
+
+@mixin h-s {
+  font-size: rem(24);
+  font-weight: $fw-bold;
+  line-height: 1;
+}
+
+.h-s {
+  @include h-s;
+}
