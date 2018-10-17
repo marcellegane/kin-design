@@ -13,7 +13,6 @@
   left: 0;
   bottom: $gtr * 3;
   width: 70%;
-  // border: rem(2) solid rgba($white, 0.4);
 }
 
 .hero__main {
@@ -22,6 +21,13 @@
   max-width: 41em;
   margin-left: auto;
   padding: $gtr-dbl;
+  background-color: $black;
+}
+
+.hero__title {
+  display: inline-block;
+  padding: $gtr;
+  text-align: center;
   background-color: $black;
 }
 
