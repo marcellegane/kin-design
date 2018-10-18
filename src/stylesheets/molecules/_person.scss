@@ -1,6 +1,28 @@
+.person {
+  position: relative;
+  padding: 0 $gtr $gtr;
+  color: $black;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: rem(100);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    z-index: -1;
+    border-radius: rem(6);
+    background-color: $white;
+  }
+}
+
 .person__thumb {
-  width: 75%;
-  border: rem(4) solid;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: rem(4) solid $white;
+  border-radius: rem(6) rem(6) 0 0;
   background: {
     repeat: no-repeat;
     position: center;

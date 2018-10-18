@@ -20,15 +20,12 @@
   position: relative;
   max-width: 41em;
   margin-left: auto;
-  padding: $gtr-dbl;
+  padding: rem(60);
   background-color: $black;
 }
 
-.hero__title {
-  display: inline-block;
-  padding: $gtr;
+.hero__header {
   text-align: center;
-  background-color: $black;
 }
 
 .hero__text {

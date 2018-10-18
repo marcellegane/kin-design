@@ -40,7 +40,7 @@
 
 .card__title {
   width: calc(100% - #{$gtr});
-  padding: rem(20) $gtr;
+  padding: rem(20) rem(30);
   font-size: rem(24);
   font-weight: $fw-bold;
   line-height: (31/24);

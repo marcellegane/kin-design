@@ -5,16 +5,16 @@
     <div class="container">
 
       <div class="grid">
-        <div class="col col-m-9">
-          <div class="hero__title">
-            <h2 class="h-l">Meet the team</h2>
+        <div class="col">
+          <div class="hero__header">
+            <h2 class="h-l h-box h-box--c">Meet the team</h2>
           </div>
         </div>
       </div>
 
       <div class="grid grid--j-c">
         {% for member in team %}
-          <div class="col col-m-3">
+          <div class="col col-m-6 col-l-4">
             <div class="person">
               <div class="person__thumb" style="background-image: url({{ member.thumb }})"></div>
               <h3 class="person__title h-s">{{ member.name }}</h3>

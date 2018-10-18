@@ -21,23 +21,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .h-m {
   @include h-m;
-
-  &--box {
-    position: relative;
-    display: inline-block;
-    padding: rem(15) rem(30) rem(20);
-    background-color: $black;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 100%;
-      right: 0;
-      width: 70%;
-      height: rem(6);
-      background-color: $red;
-    }
-  }
 }
 
 @mixin h-s {
@@ -48,4 +31,27 @@ h1, h2, h3, h4, h5, h6 {
 
 .h-s {
   @include h-s;
+}
+
+.h-box {
+  position: relative;
+  display: inline-block;
+  padding: 0.41667em 0.83333em 0.55556em;
+  background-color: $black;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 70%;
+    height: rem(6);
+    background-color: $red;
+  }
+
+  &--c {
+    &:before {
+      right: 15%;
+    }
+  }
 }
