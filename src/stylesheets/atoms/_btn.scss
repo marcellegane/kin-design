@@ -1,6 +1,6 @@
 .btn {
   display: inline-block;
-  padding: em(9) em(20) em(10);
+  padding: em(9, 16) em(20, 16) em(10, 16);
 
   font-family: $ff-primary;
   font-size: rem(16);
@@ -11,4 +11,8 @@
   color: $white;
 
   background-color: $red;
+}
+
+.btn--small {
+  font-size: rem(14);
 }

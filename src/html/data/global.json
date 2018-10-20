@@ -6,21 +6,18 @@
     "text": "<p>KIN is a new initiative aiming to bring black activists and organisers together from across the UK to collaborate, strategise and support each other.</p><p>The first  convening will take place from Friday 17th to Sunday 19th August 2018 where around thirty activists and organisers will come together to explore the history of national and international social movements, to share organising practice and to contextualise what achieving collective liberation looks like within the UK. Click here to apply.</p>"
   },
 
-  "latest": [
+  "news": [
     {
       "thumb": "images/latest-thumb-5.jpg",
-      "date": "27th July 2018",
-      "title": "Thanks for attending our official launch"
+      "date": "July 21st 2018",
+      "title": "The KIN Launch | Black British Activism: Where Are We At?",
+      "excerpt": "On the 5th July, the Kinfolk Network had its first official launch, an event that incorporated discussions, music, food, and good humour."
     },
     {
       "thumb": "images/latest-thumb-3.jpg",
-      "date": "24th July 2018",
-      "title": "Apply before tomorrow night"
-    },
-    {
-      "thumb": "images/latest-thumb-3.jpg",
-      "date": "24th July 2018",
-      "title": "Apply before tomorrow night"
+      "date": "April 27th 2018",
+      "title": "Building a community for activism",
+      "excerpt": "KIN founders, Kennedy Walker and Ayeisha Thomas-Smith chat about the initiative with Maurice Mcleod for Civil Society Futures. Have a listen to find out more about us."
     }
   ],
 

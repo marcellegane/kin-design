@@ -30,8 +30,7 @@
       </div>
 
       <div class="grid grid--j-c">
-
-        {% for card in latest %}
+        {% for card in news %}
           <div class="col col-m-6 col-l-4">
             <article class="card">
               <div class="card__bg" style="background-image: url({{ card.thumb }})"></div>
@@ -40,8 +39,8 @@
             </article>
           </div>
         {% endfor %}
-
       </div>
+
     </div>
   </section>
 

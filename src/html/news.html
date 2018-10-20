@@ -1,0 +1,38 @@
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+  <div class="hero">
+    <div class="container">
+
+      <div class="grid">
+        <div class="col">
+          <div class="hero__header">
+            <h2 class="h-xl h-box h-box--c">News</h2>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid grid--j-c">
+        {% for card in news %}
+          <div class="col col-m-6 col-l-5">
+            <article class="card">
+              <div class="card__bg" style="background-image: url({{ card.thumb }})"></div>
+              <p class="card__date">{{ card.date }}</p>
+              <h4 class="card__title">{{ card.title }}</h4>
+              <div class="card__excerpt">
+                <p>{{ card.excerpt }}</p>
+                <a href="#" class="card__btn btn btn--small">Read more</a>
+              </div>
+            </article>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
