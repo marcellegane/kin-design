@@ -6,15 +6,25 @@
   align-items: $align;
 
   @if $gutters == true {
-    margin-left: -$gtr;
-    margin-right: -$gtr;
+    margin-left: -$gtr-half;
+    margin-right: -$gtr-half;
+
+    @include media($medium-screen-up) {
+      margin-left: -$gtr;
+      margin-right: -$gtr;
+    }
   }
 }
 
 @mixin flex-span($columns-span, $gutters: true) {
   @if $gutters {
-    width: calc(#{percentage($columns-span / $cols)} - #{$gtr-dbl});
-    margin: $gtr;
+    width: calc(#{percentage($columns-span / $cols)} - #{$gtr});
+    margin: $gtr-half;
+
+    @include media($medium-screen-up) {
+      width: calc(#{percentage($columns-span / $cols)} - #{$gtr-dbl});
+      margin: $gtr;
+    }
   } @else {
     width: #{percentage($columns-span / $cols)};
   }
@@ -22,9 +32,17 @@
 
 @mixin flex-offset($columns, $right: false) {
   @if $right {
-    margin-right: calc(#{percentage($columns / $cols)} + #{$gtr});
+    margin-right: calc(#{percentage($columns / $cols)} + #{$gtr-half});
+
+    @include media($medium-screen-up) {
+      margin-right: calc(#{percentage($columns / $cols)} + #{$gtr});
+    }
   } @else {
-    margin-left: calc(#{percentage($columns / $cols)} + #{$gtr});
+    margin-left: calc(#{percentage($columns / $cols)} + #{$gtr-half});
+
+    @include media($medium-screen-up) {
+      margin-left: calc(#{percentage($columns / $cols)} + #{$gtr});
+    }
   }
 }
 

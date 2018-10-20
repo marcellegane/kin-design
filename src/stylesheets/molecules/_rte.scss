@@ -1,0 +1,7 @@
+.rte {
+  @include flow;
+
+  p {
+    font-size: rem(21);
+  }
+}

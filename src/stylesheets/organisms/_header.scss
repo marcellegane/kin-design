@@ -3,9 +3,14 @@
   top: 0;
   right: 0;
   left: 0;
-  padding-top: $gtr;
-  padding-bottom: $gtr;
+  padding-top: $gtr-half;
+  padding-bottom: $gtr-half;
   z-index: 100;
+
+  @include media($medium-screen-up) {
+    padding-top: $gtr;
+    padding-bottom: $gtr;
+  }
 }
 
 .header__wrapper {

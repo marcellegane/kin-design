@@ -1,0 +1,21 @@
+.article__hero {
+  position: relative;
+}
+
+.article__title {
+  max-width: 21em;
+
+  @include media($medium-screen-up) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.article__image {
+  display: block;
+}
+
+.article__main {
+  margin-top: $gtr;
+}
