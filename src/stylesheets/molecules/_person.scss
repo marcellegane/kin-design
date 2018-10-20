@@ -3,6 +3,12 @@
   padding: 0 $gtr $gtr;
   color: $black;
 
+  @include media($medium-screen-down) {
+    max-width: rem(460);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -12,7 +18,6 @@
     left: 0;
     display: block;
     z-index: -1;
-    border-radius: rem(6);
     background-color: $white;
   }
 }
@@ -22,7 +27,6 @@
   margin-left: auto;
   margin-right: auto;
   border: rem(4) solid $white;
-  border-radius: rem(6) rem(6) 0 0;
   background: {
     repeat: no-repeat;
     position: center;
@@ -49,5 +53,6 @@
 
 .person__role {
   font-weight: $fw-bold;
-  // color: $red;
+  // font-style: italic;
+  color: $red;
 }

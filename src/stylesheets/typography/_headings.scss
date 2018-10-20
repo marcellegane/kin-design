@@ -3,10 +3,20 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-@mixin h-l {
+@mixin h-xl {
   font-size: rem(48);
   font-weight: $fw-bold;
   line-height: (58/48);
+}
+
+.h-xl {
+  @include h-xl;
+}
+
+@mixin h-l {
+  font-size: rem(36);
+  font-weight: $fw-bold;
+  line-height: 1;
 }
 
 .h-l {
@@ -14,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @mixin h-m {
-  font-size: rem(36);
+  font-size: rem(32);
   font-weight: $fw-bold;
   line-height: 1;
 }
@@ -31,6 +41,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .h-s {
   @include h-s;
+}
+
+@mixin h-xs {
+  font-size: rem(20);
+  font-weight: $fw-bold;
+  line-height: 1;
+}
+
+.h-xs {
+  @include h-xs;
 }
 
 .h-box {

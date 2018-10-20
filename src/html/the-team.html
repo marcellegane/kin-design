@@ -7,26 +7,29 @@
       <div class="grid">
         <div class="col">
           <div class="hero__header">
-            <h2 class="h-l h-box h-box--c">Meet the team</h2>
+            <h2 class="h-xl h-box h-box--c">Meet the team</h2>
           </div>
         </div>
       </div>
 
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
       <div class="grid grid--j-c">
         {% for member in team %}
           <div class="col col-m-6 col-l-4">
             <div class="person">
               <div class="person__thumb" style="background-image: url({{ member.thumb }})"></div>
-              <h3 class="person__title h-s">{{ member.name }}</h3>
-              <p class="person__role">{{ member.role }}</p>
+              <h3 class="person__title h-m">{{ member.name }}</h3>
+              <p class="person__role h-xs">{{ member.role }}</p>
               <p class="person__text">{{ member.about }}</p>
             </div>
           </div>
         {% endfor %}
-
       </div>
     </div>
-  </div>
-
+  </section>
 
 {% endblock %}
