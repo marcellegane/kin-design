@@ -24,5 +24,6 @@ $extra-large-screen-up    : "min-width: #{$extra-large-screen}";
 $breakpoints: (
   s: $small-screen-up,
   m: $medium-screen-up,
-  l: $large-screen-up
+  l: $large-screen-up,
+  xl: $extra-large-screen-up
 );
