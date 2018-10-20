@@ -1,5 +1,5 @@
 .hero {
-  padding-top: calc(#{$header-height} + #{$gtr});
+  padding-top: $header-height;
 }
 
 .hero__body {

@@ -46,13 +46,12 @@
   margin-top: 0.5em;
 }
 
-.person__role,
-.person__text {
-  margin-top: 0.5em;
+.person__role {
+  margin-top: 0.1em;
+  font-weight: $fw-bold;
+  color: $red;
 }
 
-.person__role {
-  font-weight: $fw-bold;
-  // font-style: italic;
-  color: $red;
+.person__text {
+  margin-top: 0.5em;
 }
