@@ -21,7 +21,8 @@
         {% for card in news %}
           <div class="col col-m-6 col-l-5">
             <article class="card">
-              <div class="card__bg" style="background-image: url({{ card.thumb }})"></div>
+              <div class="card__bg"></div>
+              <div class="card__thumb" style="background-image: url({{ card.thumb }})"></div>
               <p class="card__date">{{ card.date }}</p>
               <h4 class="card__title">{{ card.title }}</h4>
               <div class="card__excerpt">

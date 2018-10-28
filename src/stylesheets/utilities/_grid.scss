@@ -9,7 +9,7 @@
     margin-left: -$gtr-half;
     margin-right: -$gtr-half;
 
-    @include media($medium-screen-up) {
+    @include media($large-screen-up) {
       margin-left: -$gtr;
       margin-right: -$gtr;
     }
@@ -21,7 +21,7 @@
     width: calc(#{percentage($columns-span / $cols)} - #{$gtr});
     margin: $gtr-half;
 
-    @include media($medium-screen-up) {
+    @include media($large-screen-up) {
       width: calc(#{percentage($columns-span / $cols)} - #{$gtr-dbl});
       margin: $gtr;
     }
@@ -34,13 +34,13 @@
   @if $right {
     margin-right: calc(#{percentage($columns / $cols)} + #{$gtr-half});
 
-    @include media($medium-screen-up) {
+    @include media($large-screen-up) {
       margin-right: calc(#{percentage($columns / $cols)} + #{$gtr});
     }
   } @else {
     margin-left: calc(#{percentage($columns / $cols)} + #{$gtr-half});
 
-    @include media($medium-screen-up) {
+    @include media($large-screen-up) {
       margin-left: calc(#{percentage($columns / $cols)} + #{$gtr});
     }
   }

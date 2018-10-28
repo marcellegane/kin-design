@@ -1,5 +1,8 @@
 .card {
   position: relative;
+  max-width: rem(520);
+  margin-left: auto;
+  margin-right: auto;
 
   &:before {
     content: '';
@@ -17,9 +20,18 @@
 
 .card__bg {
   position: absolute;
+  top: 84%;
+  right: $gtr-half;
+  bottom: 0;
+  left: $gtr-half;
+  background: $white;
+}
+
+.card__thumb {
+  position: absolute;
   top: 0;
-  right: 0;
-  width: calc(100% - #{$gtr});
+  left: $gtr-half;
+  right: $gtr-half;
   background: {
     repeat: no-repeat;
     position: center;
@@ -41,9 +53,9 @@
 }
 
 .card__date {
-  display: inline-block;;
+  display: inline-block;
   padding: rem(10) rem(16);
-  font-size: rem(16);
+  font-size: rem(14);
   font-weight: $fw-bold;
   line-height: (19/16);
   color: $black;
@@ -51,17 +63,23 @@
 }
 
 .card__title {
-  width: calc(100% - #{$gtr});
-  padding: rem(20) $gtr;
+  padding: rem(20) $gtr-half;
   font-size: rem(24);
   font-weight: $fw-bold;
   line-height: (31/24);
   color: $white;
   background-color: $black;
+
+  @include media($large-screen-up) {
+    padding-left: $gtr;
+    padding-right: $gtr;
+  }
 }
 
 .card__excerpt {
-  margin-left: $gtr;
+  position: relative;
+  margin-left: $gtr-half;
+  margin-right: $gtr-half;
   padding: $gtr;
   color: $black;
   background-color: $white;
