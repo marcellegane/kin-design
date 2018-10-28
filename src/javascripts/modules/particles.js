@@ -5,7 +5,13 @@ const particles = {
     if (this.el) {
       particlesJS("particles", {
         particles: {
-          number: { value: 80, density: { enable: true, value_area: 800 } },
+          number: {
+            value: 90,
+            density: {
+              enable: true,
+              value_area: 800
+            }
+          },
 
           color: { value: "#ffffff" },
 
@@ -17,32 +23,32 @@ const particles = {
           },
 
           opacity: {
-            value: 0.5,
-            random: false,
+            value: 0.8,
+            random: true,
             anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
           },
 
           size: {
             value: 3,
             random: true,
-            anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
+            anim: { enable: false, speed: 40, size_min: 2, sync: false }
           },
 
           line_linked: {
             enable: true,
-            distance: 130,
+            distance: 140,
             color: "#ffffff",
-            opacity: 0.4,
+            opacity: 0.6,
             width: 2
           },
 
           move: {
             enable: true,
-            speed: 2,
+            speed: 2.5,
             direction: "none",
             random: true,
             straight: false,
-            out_mode: "out",
+            out_mode: "bounce",
             bounce: false,
             attract: { enable: false, rotateX: 600, rotateY: 1200 }
           }
@@ -53,7 +59,7 @@ const particles = {
 
           events: {
             onhover: { enable: false, mode: "repulse" },
-            onclick: { enable: false, mode: "push" },
+            onclick: { enable: true, mode: "push" },
             resize: true
           },
 
