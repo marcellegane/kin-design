@@ -2,6 +2,10 @@ import Instafeed from 'instafeed.js';
 
 const instagram = {
   init() {
+    if (!document.getElementById(`instafeed`)) {
+      return false;
+    }
+
     const feed = new Instafeed({
       userId: '6988872419', // marcellegane - 44228638, Kin - 6988872419
       clientId: '42b3a18eba024f9e9aea91cfb14a70e6', // marcellegane - 3f8334edae7d421fa326d94d788b3b9d, Kin - 42b3a18eba024f9e9aea91cfb14a70e6

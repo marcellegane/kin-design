@@ -10,9 +10,18 @@
   letter-spacing: rem(1);
   color: $white;
 
+  border: none;
   background-color: $red;
 }
 
 .btn--small {
   font-size: rem(14);
+}
+
+.btn--large {
+  font-size: rem(18);
+}
+
+.btn--secondary {
+  background-color: $blue;
 }

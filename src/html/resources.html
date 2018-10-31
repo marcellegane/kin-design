@@ -1,0 +1,38 @@
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+  <div class="hero">
+    <div class="container">
+      <div class="grid">
+        <div class="col">
+          <div class="hero__header">
+            <h2 class="h-xl h-box h-box--c">Resources</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="filter-wrapper">
+        <button class="btn btn--large btn--secondary filter is-active">All</button>
+        <button class="btn btn--large btn--secondary filter">Sessions</button>
+        <button class="btn btn--large btn--secondary filter">Media</button>
+      </div>
+
+      <ul class="grid grid--j-c list-reset">
+        {% for resource in resources %}
+          <li class="resource col col-m-5">
+            <img src="{{ resource.thumb }}" alt="{{ resource.title }}" class="resource__thumb">
+            <div class="resource__main">
+              <h3 class="resource__title h-s">{{ resource.title }}</h3>
+              <p class="resource__authors">{{ resource.authors }}</p>
+              <p class="resource__summary">{{ resource.summary }}</p>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+{% endblock %}
