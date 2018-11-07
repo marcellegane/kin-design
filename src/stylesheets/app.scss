@@ -7,6 +7,7 @@
 @import "utilities/grid";
 
 @import "base/base";
+@import "base/utilities";
 
 @import "typography/font-face";
 @import "typography/typography";
@@ -14,6 +15,7 @@
 
 @import "atoms/btn";
 @import "atoms/logo";
+@import "atoms/tag";
 
 @import "molecules/layout";
 @import "molecules/menu";
@@ -26,6 +28,8 @@
 @import "molecules/article";
 @import "molecules/rte";
 @import "molecules/insta";
+@import "molecules/resource";
+@import "molecules/filter";
 
 @import "organisms/header";
 @import "organisms/container";
