@@ -103,24 +103,32 @@
     {
       "thumb": "images/resources/gpilogo3.png",
       "title": "The 8 Principles of John La Rose & the black parents movement",
+      "tag": "Session",
+      "link": "sessions/session.pptx",
       "authors": "Zahra Dalilah and the George Padmore Institute",
       "summary": "Exploring the work and legacy of Trinidadian artist and activist, John La Rose, this session encourages participants to reflect on the underpinning principles that guide our actions and campaigns and how they manifest in the outcomes of our work, using the Black Parents Movement of La Rose's era as a case study. An in-house KIN session in collaboration with the George Padmore Institute."
     },
     {
       "thumb": "images/resources/theatre.jpg",
       "title": "Theatre of the oppressed",
+      "tag": "Media",
+      "link": "media.html",
       "authors": "Desta Haile",
       "summary": "The Theatre of the Oppressed (TO) describes theatrical forms that the Brazilian theatre practitioner Augusto Boal first elaborated in the 1970s, initially in Brazil and later in Europe."
     },
     {
       "thumb": "images/resources/panya.jpg",
       "title": "Archives as an Act of Protest",
+      "tag": "Session",
+      "link": "sessions/session.pptx",
       "authors": "Panya Banjoko",
       "summary": "This session includes what motivated the formation of Nottingham Black Archive, how the community are  engaged in archiving and memory collecting activities, such as oral history projects, and what form such activities take, including the extent to which they impact on the wider community."
     },
     {
       "thumb": "images/resources/kesewa.jpg",
       "title": "Black British Activism and Historians",
+      "tag": "Session",
+      "link": "sessions/session.pptx",
       "authors": "Panya Banjoko",
       "summary": "Through group discussion and break out groups, this session aims to consider the roles of activists, archivists and historians in the creation of Black British history and how we can enhance one another’s work."
     }

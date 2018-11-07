@@ -23,12 +23,13 @@
 
       <ul class="grid grid--j-c list-reset">
         {% for resource in resources %}
-          <li class="resource col col-m-5">
+          <li class="resource col col-m-8 col-l-6 col-xl-5">
             <img src="{{ resource.thumb }}" alt="{{ resource.title }}" class="resource__thumb">
             <div class="resource__main">
-              <h3 class="resource__title h-s">{{ resource.title }}</h3>
+              <a href="{{ resource.link }}" class="resource__link"><h3 class="resource__title h-s">{{ resource.title }}</h3></a>
               <p class="resource__authors">{{ resource.authors }}</p>
               <p class="resource__summary">{{ resource.summary }}</p>
+              <p class="resource__tag tag">{{ resource.tag }}</p>
             </div>
           </li>
         {% endfor %}

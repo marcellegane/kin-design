@@ -1,0 +1,27 @@
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+  <div class="hero">
+    <div class="container">
+      <div class="article__hero">
+        <h2 class="article__title article__title--inline h-xl h-box">Theatre of the oppressed</h2>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid grid--j-c">
+        <div class="col col-s-10 col-l-8">
+          <p class="article__date h-xs">{{ news[0].date }}</p>
+          <p class="article__author h-xs">Words by Desta Haile</p>
+          <div class="article__main rte">
+            <p>The Theatre of the Oppressed (TO) describes theatrical forms that the Brazilian theatre practitioner Augusto Boal first elaborated in the 1970s, initially in Brazil and later in Europe. Boal was influenced by the work of the educator and theorist Paulo Freire. Boal's techniques use theatre as means of promoting social and political change. In the Theatre of the Oppressed, the audience becomes active, such that as "spect-actors" they explore, show, analyse and transform the reality in which they are living.</p>
+            <iframe src="https://open.spotify.com/embed/user/languagesthroughmusic/playlist/25YpL51XZ01f4jC3AZbPbj" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
